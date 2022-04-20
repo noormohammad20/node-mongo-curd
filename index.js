@@ -18,13 +18,14 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
     try {
         await client.connect()
-        const userCollection = client.db("foodExpress").collection("user")
-        const user = { name: 'mohona nodi', email: 'nodi@gmail.com' }
-        const result = await userCollection.insertOne(user)
-        console.log(`User inserted with id: ${result.insertedId}`)
+        const userCollection = client.db('foodExpress').collection('user')
+
+        app.post('/users', (req, res) => {
+
+        })
     }
     finally {
-        // await client.close()
+
     }
 }
 
