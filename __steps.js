@@ -29,6 +29,14 @@
  * 2. On Submit Get Form Data And create user object
  * 3. on Server Create User Post Method To Receive Data On Backend
  * 4. on Client Side : set fetch with post, with headers and body
- * 5. make sure you return a json from the post api
+ * 5. make sure you return a json from the POST API
+ * ----------------------------------------
+ * LOAD DATA to the Client side
+ * ----------------------------------------
+ * 1. create get API on the server side
+ * 2. create a query object
+ * 3. collection.find(query) 
+ * 4. cursor.toArray()
+ * 5. return the result
  * 
 */
